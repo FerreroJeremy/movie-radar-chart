@@ -16,6 +16,8 @@ It is impossible to rate all different kinds of movies on the same scale.
 Movie Radar Chart, rather than rate the quality of a movie between 1 ⭐ and 5 ⭐, or between 0% and 100%, offers an unique ethically and objectively rating system.
 This helps to nuance a scary movie (like <a rel="Scream" href="https://www.imdb.com/title/tt0117571/">Scream</a>) and a horror movie (like <a rel="It" href="https://www.imdb.com/title/tt1396484/">It</a>), or avoid to say that a movie is a children's movie or girls' movie, for example.
 
+<p align="center"><img width="500px" src="https://github.com/FerreroJeremy/movie-radar-chart/blob/master/samples/example.png"></p>
+
 ### Some examples
 
 Below, three examples of Movie Radar Chart on three various films to try to convince you that this system is more accurate than the other rating systems.
@@ -29,7 +31,7 @@ Aladdin is a PG movie, a comedy movie based on a love story between the two main
 It is a funny movie that not particularly play on our feelings.
 It is not an action movie but the plot is fast-paced, without downtime and with a few twists.
 It is not a Sci-Fi movie but there are a lot of Sci-Fi effects.
-The sound atmosphere is present and original.
+The sound atmosphere is present and original (ok, composed initially for the animated version but you understand).
 
 #### <a rel="Mission: Impossible" href="https://www.imdb.com/title/tt4912910/">Mission: Impossible - Fallout (2018)</a>
 It is a true action movie, with a touch of humor.
