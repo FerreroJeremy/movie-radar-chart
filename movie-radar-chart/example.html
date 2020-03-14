@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+		<title>Movie Rate Chart</title>
+
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		
+		<!-- Perso CSS -->
+		<link href='movie-radar.css' rel='stylesheet' type='text/css'>
+
+		<!-- D3.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="radarChart"></div>
+		<script src="radarChart.js"></script>	
+		<script>
+			/* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+      
+			////////////////////////////////////////////////////////////// 
+			//////////////////////// Set-Up ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var margin = {top: 110, right: 110, bottom: 110, left: 110},
+				width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+					
+			////////////////////////////////////////////////////////////// 
+			////////////////////////// Data ////////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var data = [
+					  [
+						{text:"Romance", image:"img/heart.svg", value:0},
+						{text:"Drama", image:"img/sad.svg", value:4},
+						{text:"Comedy", image:"img/theater.svg", value:0},
+						{text:"Action intensity", image:"img/explosion.svg", value:5},
+						{text:"Scary", image:"img/ghost.svg", value:0},
+						{text:"Horror", image:"img/skull.svg", value:0},
+						{text:"Sound atmosphere", image:"img/guitar.svg", value:5},
+						{text:"Original Sound Track", image:"img/violin.svg", value:5},
+						{text:"Sci-Fi degree", image:"img/ufo.svg", value:5},
+						{text:"Accuracy", image:"img/drawing.svg", value:2},
+						{text:"Production", image:"img/camera.svg", value:5},
+						{text:"Script", image:"img/quill.svg", value:5},
+						{text:"Acting", image:"img/actor.svg", value:5},
+						{text:"Complexity", image:"img/brain.svg", value:5},
+						{text:"Audience", image:"img/family.svg", value:2},
+						{text:"Parity", image:"img/balance.svg", value:3}			
+					  ]
+					];
+			////////////////////////////////////////////////////////////// 
+			//////////////////// Draw the Chart ////////////////////////// 
+			////////////////////////////////////////////////////////////// 
+
+			var color = d3.scale.ordinal()
+				.range(["#00A0B0"]);
+				
+			var radarChartOptions = {
+			  w: width,
+			  h: height,
+			  margin: margin,
+			  maxValue: 5,
+			  levels: 5,
+			  roundStrokes: true,
+			  color: color
+			};
+			//Call function to draw the Radar chart
+			RadarChart(".radarChart", data, radarChartOptions);
+		</script>
+	</body>
+</html>
